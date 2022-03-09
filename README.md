@@ -6,10 +6,11 @@
 1. Run your application ( npm start )
 2. Open ***localhost:3000*** and then go to the ***Lighthouse*** Tab
 3. leave the configuration as the next image shows:
-4. Click on ***Generate report*** and wait for the browser to create the report.
-5. Let's create a new ***Service Worker*** to address the install issue
-6. Create a file called ***worker.js*** inside the ***public*** folder of your project
-7. Add the following code ( Don't pay much atention to it for now, this code will install and update whenever is required a Service Worker for your application to cache resources, for it to have a similar behaviour as native apps ):
+   ![Configuration](/assets/Config%20browser.png)
+5. Click on ***Generate report*** and wait for the browser to create the report.
+6. Let's create a new ***Service Worker*** to address the install issue
+7. Create a file called ***worker.js*** inside the ***public*** folder of your project
+8. Add the following code ( Don't pay much atention to it for now, this code will install and update whenever is required a Service Worker for your application to cache resources, for it to have a similar behaviour as native apps ):
 	```js
 	/* eslint-disable no-restricted-globals */
 
