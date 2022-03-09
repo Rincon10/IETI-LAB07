@@ -90,7 +90,7 @@
 10. Update your *src/index.js*, add at the end of the file ***serviceWorker.register()***. also import it as ***import  *  as  serviceWorker  from  './serviceWorkerRegistration'***
 11. Reload your application, run *npm start* again
 12. Run a LightHouse report, now your app should be able to be installed on a mobile
-   <img align="center" src="assets/installable.PNG">
+   <img align="center" src="assets/Installable.PNG">
 
 
 ## Part 2: State Management
