@@ -8,9 +8,10 @@
 3. leave the configuration as the next image shows:
    <img align="center" src="assets/Config%20browser.PNG">
 5. Click on ***Generate report*** and wait for the browser to create the report.
-6. Let's create a new ***Service Worker*** to address the install issue
-7. Create a file called ***worker.js*** inside the ***public*** folder of your project
-8. Add the following code ( Don't pay much atention to it for now, this code will install and update whenever is required a Service Worker for your application to cache resources, for it to have a similar behaviour as native apps ):
+   <img align="center" src="assets/Not-installable.PNG">
+7. Let's create a new ***Service Worker*** to address the install issue
+8. Create a file called ***worker.js*** inside the ***public*** folder of your project
+9. Add the following code ( Don't pay much atention to it for now, this code will install and update whenever is required a Service Worker for your application to cache resources, for it to have a similar behaviour as native apps ):
 	```js
 	/* eslint-disable no-restricted-globals */
 
@@ -89,6 +90,7 @@
 10. Update your *src/index.js*, add at the end of the file ***serviceWorker.register()***. also import it as ***import  *  as  serviceWorker  from  './serviceWorkerRegistration'***
 11. Reload your application, run *npm start* again
 12. Run a LightHouse report, now your app should be able to be installed on a mobile
+   <img align="center" src="assets/installable.PNG">
 
 
 ## Part 2: State Management
