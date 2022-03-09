@@ -6,7 +6,7 @@
 1. Run your application ( npm start )
 2. Open ***localhost:3000*** and then go to the ***Lighthouse*** Tab
 3. leave the configuration as the next image shows:
-   <img align="center" src="assets/Config%20browser.png">
+   <img align="center" src="assets/Config%20browser.PNG">
 5. Click on ***Generate report*** and wait for the browser to create the report.
 6. Let's create a new ***Service Worker*** to address the install issue
 7. Create a file called ***worker.js*** inside the ***public*** folder of your project
