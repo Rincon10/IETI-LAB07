@@ -1,0 +1,18 @@
+gradlew bootRun
+
+```
+#app.secret=1235678910
+#spring.data.mongodb.uri=mongodb+srv://admin:admin@mycluster.79lwk.mongodb.net/myCluster?retryWrites=true&w=majority
+```
+
+
+MONGODB_URI=mongodb://admin:admin@mycluster.79lwk.mongodb.net/myCluster?retryWrites=true&w=majority
+SECRET=1235678910
+
+https://www.mongodb.com/compatibility/spring-boot
+
+0.0.0.0/0
+
+https://www.ankursheel.com/blog/automatically-set-access-token-authenticated-requests-insomnia
+
+https://www.ankursheel.com/blog/automatically-set-access-token-authenticated-requests-insomnia

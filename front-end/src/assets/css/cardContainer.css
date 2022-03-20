@@ -1,0 +1,7 @@
+#myContainer {
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin-top: 5vh;
+    min-width: 20rem;
+    min-height: 20rem;
+}

@@ -1,0 +1,17 @@
+https://typicode.github.io/husky/#/?id=install
+https://prettier.io/docs/en/precommit.html
+npx mrm@2 lint-staged
+
+npm install -g npm@latest
+npm install husky --save-dev
+npx husky install
+
+// package.json
+{
+  "scripts": {
+    "prepare": "husky install"
+  }
+}
+
+npm set-script prepare "husky install"
+npx husky add .husky/pre-commit "npm run lint:fix && npm format"

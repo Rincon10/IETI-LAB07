@@ -1,0 +1,14 @@
+:root {
+    --rojo: #f00e0e;
+    --azul: #23698c;
+}
+
+p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: var(--rojo);
+}
+
+a {
+    text-decoration: none !important;
+}
