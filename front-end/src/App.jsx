@@ -19,6 +19,8 @@ const App = () => {
         localStorage.setItem('user', JSON.stringify(user));
     }, [user]);
 
+    useEffect(() => {}, [theme]);
+
     return (
         <main id="main-container">
             <ThemeContext.Provider value={{ theme, dispatchTheme }}>

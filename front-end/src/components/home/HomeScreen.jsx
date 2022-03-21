@@ -1,6 +1,6 @@
 import useHomePage from 'components/hooks/useHomePage';
 import { types } from 'components/types/types';
-import ColorMode from 'components/ui/ColorMode';
+import SwitchColor from 'components/ui/SwitchColor';
 import { UserContext } from 'contexts/UserContext';
 import React, { useContext } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
@@ -36,12 +36,17 @@ const HomeScreen = () => {
                     </Navbar.Brand>
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>
-                            <ColorMode />
+                            <SwitchColor />
                         </Navbar.Text>
                         <Navbar.Text>
                             Logged as: <a href="home">{id}</a>
                         </Navbar.Text>
-                        <Nav.Link onClick={handleClick}>Logout</Nav.Link>
+                        <Nav.Link
+                            onClick={handleClick}
+                            style={{ color: '#1890ff' }}
+                        >
+                            Logout
+                        </Nav.Link>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
