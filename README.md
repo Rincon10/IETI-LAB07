@@ -116,7 +116,7 @@
 
 11. Reload your application, run *npm start* again
 12. Run a LightHouse report, now your app should be able to be installed on a mobile
-   <img align="center" src="assets/Installable.PNG">
+   	<img align="center" src="assets/Installable.PNG">
 
 	## Report without errors/warnings
 
