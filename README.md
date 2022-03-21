@@ -4,11 +4,21 @@
 ## Part 1: PWA
 
 1. Run your application ( npm start )
+
+<img align="center" src="assets/img/01-npm-start.jpg">
+
+
 2. Open ***localhost:3000*** and then go to the ***Lighthouse*** Tab
 3. leave the configuration as the next image shows:
    <img align="center" src="assets/Config%20browser.PNG">
 5. Click on ***Generate report*** and wait for the browser to create the report.
    <img align="center" src="assets/Not-installable.PNG">
+
+	## My Own Report
+
+	<img align="center" src="assets/img/02-Pwa-report.jpg">
+	<br />
+
 7. Let's create a new ***Service Worker*** to address the install issue
 8. Create a file called ***worker.js*** inside the ***public*** folder of your project
 9. Add the following code ( Don't pay much atention to it for now, this code will install and update whenever is required a Service Worker for your application to cache resources, for it to have a similar behaviour as native apps ):
@@ -86,11 +96,35 @@
 			</script>
 	</body>
 	```
+
+	## Testing ServiceWorker
+
+	### At login page
+
+	<img align="center" src="assets/img/03-worker-registration-login.jpg">
+
+	### At home page
+
+	<img align="center" src="assets/img/03-worker-registration-home.jpg">
+
 9. Create a file inside src called ***serviceWorkerRegistration.js*** with the same content as the repo has  ( Code is not relevant for now, the only thing that matter for now is that theres a function implemented to register your service worker and configure cache )
 10. Update your *src/index.js*, add at the end of the file ***serviceWorker.register()***. also import it as ***import  *  as  serviceWorker  from  './serviceWorkerRegistration'***
+
+	## ServiceWorker on index.jsx
+
+	<img align="center" src="assets/img/04-serviceworkerOnIndex.jpg">
+
 11. Reload your application, run *npm start* again
 12. Run a LightHouse report, now your app should be able to be installed on a mobile
    <img align="center" src="assets/Installable.PNG">
+
+	## Report without errors/warnings
+
+	
+	<img align="center" src="assets/img/05-report-without-errors-1.jpg">
+	<br />
+	<hr>
+	<img align="center" src="assets/img/05-report-without-errors-2.jpg">
 
 
 ## Part 2: State Management
