@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import LogInScreen from 'components/login/LogIN';
 import HomeScreen from 'components/home/HomeScreen';
-import { UserContext } from 'context/UserContext';
+import { UserContext } from 'contexts/UserContext';
 
 import {
     BrowserRouter as Router,

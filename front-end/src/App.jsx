@@ -1,7 +1,9 @@
 import React, { useEffect, useReducer } from 'react';
-import { UserContext } from 'context/UserContext';
 import authReducer from 'components/auth/authReducer';
 import AppRouter from 'components/routers/AppRouter';
+import themeReducer, { themeInitialState } from 'components/theme/themeReducer';
+import { ThemeContext } from 'contexts/ThemeContext';
+import { UserContext } from 'contexts/UserContext';
 
 const App = () => {
     const init = () => {
@@ -10,15 +12,20 @@ const App = () => {
 
     /* const [state, dispatch] = useReducer(reducer, initialState, init) */
     const [user, dispatch] = useReducer(authReducer, {}, init);
+
+    const [theme, dispatchTheme] = useReducer(themeReducer, themeInitialState);
+
     useEffect(() => {
         localStorage.setItem('user', JSON.stringify(user));
     }, [user]);
 
     return (
         <main id="main-container">
-            <UserContext.Provider value={{ user, dispatch }}>
-                <AppRouter />
-            </UserContext.Provider>
+            <ThemeContext.Provider value={{ theme, dispatchTheme }}>
+                <UserContext.Provider value={{ user, dispatch }}>
+                    <AppRouter />
+                </UserContext.Provider>
+            </ThemeContext.Provider>
         </main>
     );
 };

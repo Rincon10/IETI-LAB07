@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import _ from 'lodash';
 import swal from 'sweetalert';
 import { userApiclient } from 'components/services/userApiClient';
-import { UserContext } from 'context/UserContext';
+import { UserContext } from 'contexts/UserContext';
 import { types } from 'components/types/types';
 
 const useFormLogin = (

@@ -1,6 +1,7 @@
 import useHomePage from 'components/hooks/useHomePage';
 import { types } from 'components/types/types';
-import { UserContext } from 'context/UserContext';
+import ColorMode from 'components/ui/ColorMode';
+import { UserContext } from 'contexts/UserContext';
 import React, { useContext } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import CardContainer from './CardContainer';
@@ -34,6 +35,9 @@ const HomeScreen = () => {
                         Planner
                     </Navbar.Brand>
                     <Navbar.Collapse className="justify-content-end">
+                        <Navbar.Text>
+                            <ColorMode />
+                        </Navbar.Text>
                         <Navbar.Text>
                             Logged as: <a href="home">{id}</a>
                         </Navbar.Text>
