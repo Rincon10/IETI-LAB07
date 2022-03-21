@@ -199,3 +199,12 @@
 	}
 	```
 
+## Testing Dark mode
+
+### Light Mode
+ 
+<img src="assets/img/06-light-mode.jpg" />
+
+### Dark Mode
+
+<img src="assets/img/07-dark-mode.jpg" />
